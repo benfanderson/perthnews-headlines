@@ -13,11 +13,12 @@ function makeHeadline() {
            var rand1 = Math.floor(Math.random()*part1.length);
            var rand2 = Math.floor(Math.random()*part2.length);
            var rand3 = Math.floor(Math.random()*part3.length);
-           var headline = part1[rand1].name + ' ' + part2[rand2] + ' ' + 'at' + ' ' + part3[rand3].name+'.';
            var pic1 = part1[rand1].image; 
            var pic2 = part3[rand3].image;
-           var stuff = ' <img src="images/'+pic1+'.jpg">' + ' <img src="images/'+pic2+'.jpg">' + '<br>' + headline 
-            document.write (stuff);
+           var headlinePics = document.getElementById('pictures');
+           headlinePics.innerHTML = ' <img src="images/'+pic1+'.jpg">' + ' <img src="images/'+pic2+'.jpg">';
+           var headlineWords = document.getElementById('words');
+           headlineWords.innerHTML = part1[rand1].name + ' ' + part2[rand2] + ' ' + 'at' + ' ' + part3[rand3].name;
         }
 
         makeHeadline();
