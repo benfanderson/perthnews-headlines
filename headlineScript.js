@@ -4,7 +4,7 @@ function makeHeadline() {
             var quokka = {name:'Quokka', image: 'quokka'};
             var part1 =[];
             part1.push(gina,ben,quokka);
-            var part2 =["gets married", "crashes ute", "caught dealing ice", "takes nude selfie", "filmed making racist rant", "sculls eight stubbies of Emu Export", "named as One Nation candiate"];
+            var part2 =["gets married", "crashes ute", "caught dealing ice", "takes nude selfie", "filmed making racist rant", "sculls stubbie of Emu Export", "named as One Nation candiate"];
             var quay = {name: 'Elizabeth Quay',image: 'quay'}
             var show = {name: 'Royal Show',image: 'show'}
             var cottesloe = {name: 'Cottesloe Beach', image: 'cott'}
@@ -16,7 +16,7 @@ function makeHeadline() {
            var pic1 = part1[rand1].image; 
            var pic2 = part3[rand3].image;
            var headlinePics = document.getElementById('pictures');
-           headlinePics.innerHTML = ' <img src="images/'+pic1+'.jpg">' + ' <img src="images/'+pic2+'.jpg">';
+           headlinePics.innerHTML = '<img src="images/'+pic1+'.jpg">' + '<img src="images/'+pic2+'.jpg">';
            var headlineWords = document.getElementById('words');
            headlineWords.innerHTML = part1[rand1].name + ' ' + part2[rand2] + ' ' + 'at' + ' ' + part3[rand3].name;
         }
