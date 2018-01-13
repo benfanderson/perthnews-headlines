@@ -16,7 +16,7 @@ function makeHeadline() {
            var pic1 = part1[rand1].image; 
            var pic2 = part3[rand3].image;
            var headlinePics = document.getElementById('pictures');
-           headlinePics.innerHTML = '<img src="images/'+pic1+'.jpg">' + '<img src="images/'+pic2+'.jpg">';
+           headlinePics.innerHTML = '<img id="picture1" src="images/'+pic1+'.jpg">' + '<img id="picture2" src="images/'+pic2+'.jpg">';
            var headlineWords = document.getElementById('words');
            headlineWords.innerHTML = part1[rand1].name + ' ' + part2[rand2] + ' ' + 'at' + ' ' + part3[rand3].name;
         }

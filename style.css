@@ -36,6 +36,11 @@
       border-width: 1.5px;
   }
 
+  #picture1, #picture2 {
+    width: 50%;
+    height: auto;
+  }
+
   h2{
     font-size: 2em;
   }
