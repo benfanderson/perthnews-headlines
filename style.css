@@ -4,34 +4,28 @@
     font-family: 'Open Sans', sans-serif;
   }
 
-  body{
-    background-color: aliceblue;
-  }
-
   header{
     text-align: center;
   }
 
   h1{
-    font-size: 3.5em;
+    font-size: 2em;
   }
 
   p{
-    font-size: 1.75em;
+    font-size: 1em;
   }
 
   .container{
-      width: 75%;
+      width: 90%;
       height: 100%;
       margin: auto;
-      padding: 1%;
-      background-color: white;
+
+     
   }
 
   .headline-module{
-      width: 75%;
-      margin: auto;
-      padding: 1%;
+      padding: 1.5%;
       border-style: solid;
       border-width: 1.5px;
   }
@@ -42,10 +36,67 @@
   }
 
   h2{
-    font-size: 2em;
+    font-size: 1.4em;
   }
 
   footer{
     text-align: center;
     font-style: italic;
+    font-size: 0.75em;
   }
+
+  /*View for tablets*/
+@media (min-width:479px){
+
+  body{
+    background-color: aliceblue;
+  }
+
+  .container{
+    width: 85%;
+    background-color: white;
+}
+
+  h1{
+    font-size: 2.5em;
+  }
+
+  p{
+    font-size: 1.5em;
+  }
+
+  .headline-module{
+    width: 85%;
+    margin: auto;
+    padding: 1%;
+  }
+
+  h2{
+    font-size: 2em;
+  }
+
+  footer{
+    font-size: 0.9em;
+  }
+
+}
+
+/*View for desktop*/
+@media (min-width:800px){
+  .container{
+    width: 75%;
+    padding: 1%;
+  }
+
+  h1{
+    font-size: 3.5em;
+  }
+
+  p{
+    font-size: 1.75em;
+  }
+
+  .headline-module{
+    width: 72%;
+  }
+}
