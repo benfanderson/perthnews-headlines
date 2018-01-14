@@ -1,5 +1,5 @@
 # perthnews-headlines
-Using HTML, Javascript and (eventually) CSS to generate funny headlines for #perthnews readers.
+Using vanilla Javascript generate funny headlines for #perthnews readers.
 
 Any headlines you read on this page are parodies and 100% fictional.
 
