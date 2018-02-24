@@ -18,17 +18,15 @@ function makeHeadline() {
         {name: 'Bell Tower', image: 'bell'},
         {name: 'Perth Stadium', image: 'stadium'}
     ];
-    var rand1 = Math.floor(Math.random()*array1.length);
-    var rand2 = Math.floor(Math.random()*array2.length);
-    var rand3 = Math.floor(Math.random()*array3.length);
-    var part1 = array1[rand1];
-    var part2 = array2[rand2];
-    var part3 = array3[rand3];
-    var pic1 = part1.image; 
-    var pic2 = part3.image;
-    var headlinePics = document.getElementById('pictures');
-    headlinePics.innerHTML = '<img id="picture1" src="images/'+pic1+'.jpg">' + '<img id="picture2" src="images/'+pic2+'.jpg">';
-    var headlineWords = document.getElementById('words');
+    const rand1 = Math.floor(Math.random()*array1.length);
+    const rand2 = Math.floor(Math.random()*array2.length);
+    const rand3 = Math.floor(Math.random()*array3.length);
+    const part1 = array1[rand1];
+    const part2 = array2[rand2];
+    const part3 = array3[rand3];
+    const headlinePics = document.getElementById('pictures');
+    headlinePics.innerHTML = '<img id="picture1" src="images/'+part1.image+'.jpg">' + '<img id="picture2" src="images/'+part3.image+'.jpg">';
+    const headlineWords = document.getElementById('words');
     headlineWords.innerHTML = part1.name + ' ' + part2 + ' ' + 'at' + ' ' + part3.name;
     }
 makeHeadline();
