@@ -29,7 +29,7 @@ function makeHeadline() {
     var headlinePics = document.getElementById('pictures');
     headlinePics.innerHTML = '<img id="picture1" src="images/'+pic1+'.jpg">' + '<img id="picture2" src="images/'+pic2+'.jpg">';
     var headlineWords = document.getElementById('words');
-    headlineWords.innerHTML = part1.name + ' ' + part2.name + ' ' + 'at' + ' ' + part3.name;
+    headlineWords.innerHTML = part1.name + ' ' + part2 + ' ' + 'at' + ' ' + part3.name;
     }
 makeHeadline();
 
