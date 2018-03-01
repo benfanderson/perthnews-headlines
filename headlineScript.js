@@ -29,6 +29,6 @@ function makeHeadline() {
     const headlineWords = document.getElementById('words');
     headlineWords.innerHTML = part1.name + ' ' + part2 + ' ' + 'at' + ' ' + part3.name;
     }
-makeHeadline();
+window.onload = makeHeadline;
 
        
