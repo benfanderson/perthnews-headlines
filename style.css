@@ -39,6 +39,11 @@
     font-size: 1.4em;
   }
 
+  #headlineButton {
+    margin: auto;
+    display: block;
+  }
+
   footer{
     text-align: center;
     font-style: italic;

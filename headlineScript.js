@@ -30,5 +30,6 @@ function makeHeadline() {
     headlineWords.innerHTML = part1.name + ' ' + part2 + ' ' + 'at' + ' ' + part3.name;
     }
 window.onload = makeHeadline;
-
+const headlineButton = document.getElementById("headlineButton");
+headlineButton.onclick = makeHeadline;
        
