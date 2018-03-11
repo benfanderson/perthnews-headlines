@@ -29,7 +29,11 @@ function makeHeadline() {
     const headlineWords = document.getElementById('words');
     headlineWords.innerHTML = part1.name + ' ' + part2 + ' ' + 'at' + ' ' + part3.name;
     }
-window.onload = makeHeadline;
-const headlineButton = document.getElementById("headlineButton");
-headlineButton.onclick = makeHeadline;
+    function init() {
+        makeHeadline();
+        const headlineButton = document.getElementById("headlineButton");
+        headlineButton.onclick = makeHeadline;
+    }
+window.onload = init;
+
        
