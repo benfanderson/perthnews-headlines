@@ -54,7 +54,10 @@
 @media (min-width:479px){
 
   body{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-image: url("images/skyline.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
   }
 
   .container{
