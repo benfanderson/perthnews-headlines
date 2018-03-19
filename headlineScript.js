@@ -24,8 +24,12 @@ function makeHeadline() {
     const part1 = array1[rand1];
     const part2 = array2[rand2];
     const part3 = array3[rand3];
-    const headlinePics = document.getElementById('pictures');
-    headlinePics.innerHTML = '<img id="picture1" src="images/'+part1.image+'.jpg">' + '<img id="picture2" src="images/'+part3.image+'.jpg">';
+    const picture1 = document.getElementById("picture1");
+    picture1.src= "images/"+part1.image+".jpg";
+    picture1.alt=part1.name;
+    const picture2 = document.getElementById("picture2");
+    picture2.src= "images/"+part3.image+".jpg";
+    picture2.alt=part3.name;
     const headlineWords = document.getElementById('words');
     headlineWords.innerHTML = part1.name + ' ' + part2 + ' ' + 'at' + ' ' + part3.name;
     }
